@@ -1,0 +1,149 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background: url(https://images.unsplash.com/photo-1583795484071-3c453e3a7c71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=100)
+    no-repeat center center fixed;
+  background-color: rgb(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  /* background-position-y: 100px; */
+  background-size: cover;
+  font-family: "Lato", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  animation: fade-in 0.5s;
+}
+.header-logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+.header-links {
+  list-style: none;
+  display: flex;
+}
+.header-links-item {
+  margin-right: 25px;
+}
+.header-links-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.header-links-link:hover {
+  color: inherit;
+}
+
+/* MAIN */
+
+.main {
+  text-align: center;
+  margin-top: 30px;
+  animation: fade-in 0.4s 0.1s backwards;
+}
+.main-heading {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.9;
+}
+.main-desc {
+  font-size: 24px;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+  line-height: 1.4;
+}
+.main-desc-span {
+  font-weight: 700;
+}
+.main-form {
+  margin-top: 30px;
+}
+.main-form-inp {
+  width: 510px;
+  height: 55px;
+  padding: 0px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-family: inherit;
+  font-size: 17px;
+  padding-left: 30px;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+.main-form-inp:focus {
+  opacity: 1;
+}
+.main-form-inp::placeholder {
+  color: black;
+}
+.main-form-btn {
+  width: 130px;
+  height: 55px;
+  padding: 0;
+  border: none;
+  background-color: black;
+  border-radius: 3px;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+  color: white;
+  transition: all 0.4s;
+}
+
+.main-form-btn:hover {
+  cursor: pointer;
+  background-color: #161616;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  font-size: 12px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: fade-in 0.5s 0.2s backwards;
+}
